@@ -3,7 +3,7 @@ import { Eye, Goal } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -14,28 +14,28 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-2 lg:gap-12 mt-12">
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-primary/20 border-2 bg-white">
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-full bg-primary/10 p-3">
-                <Eye className="h-6 w-6 text-primary" />
+              <div className="rounded-full bg-primary/10 p-3 ring-4 ring-primary/20">
+                <Eye className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="font-headline text-2xl">Our Vision</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-lg">
                 To be the catalyst for a transformed political landscape in India, where leaders are data-driven, people-centric, and dedicated to building a prosperous and inclusive Bharat.
               </p>
             </CardContent>
           </Card>
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-primary/20 border-2 bg-white">
             <CardHeader className="flex flex-row items-center gap-4">
-               <div className="rounded-full bg-primary/10 p-3">
-                <Goal className="h-6 w-6 text-primary" />
+               <div className="rounded-full bg-primary/10 p-3 ring-4 ring-primary/20">
+                <Goal className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="font-headline text-2xl">Our Mission</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-lg">
                 To empower political aspirants and representatives with cutting-edge strategic tools, data analytics, and effective communication techniques, enabling them to win elections and govern effectively.
               </p>
             </CardContent>

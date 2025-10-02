@@ -3,25 +3,25 @@ import { TrendingUp, Users, Map, Award } from "lucide-react";
 
 const impacts = [
   {
-    icon: <TrendingUp className="h-8 w-8 text-primary" />,
+    icon: <TrendingUp className="h-10 w-10 text-primary" />,
     value: "50+",
     title: "Campaigns Managed",
     description: "Successfully steered campaigns across diverse constituencies with data-driven strategies."
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
+    icon: <Users className="h-10 w-10 text-primary" />,
     value: "10,000+",
     title: "Youth Engaged",
     description: "Mobilized and trained young volunteers, creating a powerful grassroots network."
   },
   {
-    icon: <Map className="h-8 w-8 text-primary" />,
+    icon: <Map className="h-10 w-10 text-primary" />,
     value: "5+",
     title: "States Covered",
     description: "Our strategic footprint extends across multiple states, adapting to regional political dynamics."
   },
   {
-    icon: <Award className="h-8 w-8 text-primary" />,
+    icon: <Award className="h-10 w-10 text-primary" />,
     value: "80%",
     title: "Success Rate",
     description: "Achieved a high success rate in electoral contests and policy implementation projects."
@@ -30,7 +30,7 @@ const impacts = [
 
 const ImpactSection = () => {
   return (
-    <section id="impact" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="impact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Our Impact So Far</h2>
@@ -38,18 +38,18 @@ const ImpactSection = () => {
             We measure our success by the tangible results we deliver for our clients and the communities they serve.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {impacts.map((item, index) => (
-            <Card key={index} className="text-center group hover:bg-primary/5 transition-colors duration-300">
-              <CardHeader className="items-center">
-                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
+            <Card key={index} className="text-center group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-primary pt-6">
+              <CardHeader className="items-center pb-2">
+                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
                   {item.icon}
                 </div>
-                <p className="text-5xl font-bold font-headline text-primary">{item.value}</p>
+                <p className="text-5xl font-bold font-headline text-primary group-hover:text-accent transition-colors duration-300">{item.value}</p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col flex-grow">
                 <CardTitle className="mb-2 text-xl font-semibold">{item.title}</CardTitle>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
+                <p className="text-muted-foreground text-sm flex-grow">{item.description}</p>
               </CardContent>
             </Card>
           ))}
