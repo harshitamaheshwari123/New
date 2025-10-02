@@ -30,7 +30,7 @@ const impacts = [
 
 const ImpactSection = () => {
   return (
-    <section id="impact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-card">
+    <section id="impact" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Our Impact So Far</h2>
@@ -40,7 +40,7 @@ const ImpactSection = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {impacts.map((item, index) => (
-            <Card key={index} className="text-center group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-primary pt-6">
+            <Card key={index} className="text-center group glass-card hover:-translate-y-2 transition-all duration-300 border-t-4 border-primary pt-6">
               <CardHeader className="items-center pb-2">
                 <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
                   {item.icon}

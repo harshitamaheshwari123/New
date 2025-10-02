@@ -21,7 +21,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-card">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Whom We Cater To</h2>
@@ -31,10 +31,9 @@ const ServicesSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center p-6 flex flex-col items-center shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group perspective preserve-3d">
-               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card key={index} className="text-center p-6 flex flex-col items-center glass-card hover:-translate-y-2 transition-all duration-300 group">
               <CardHeader className="items-center z-10">
-                <div className="mb-6 bg-white p-4 rounded-full shadow-md transition-transform duration-500 group-hover:scale-110 group-hover:rotate-x-15">{service.icon}</div>
+                <div className="mb-6 bg-white/50 p-4 rounded-full shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">{service.icon}</div>
                 <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="z-10">

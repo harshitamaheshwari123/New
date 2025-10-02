@@ -104,6 +104,12 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 1s ease-out forwards',
       },
+      backgroundImage: {
+        'grid-white': "linear-gradient(to right, theme('colors.white / 8%') 1px, transparent 1px), linear-gradient(to bottom, theme('colors.white / 8%') 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        'grid-white': '40px 40px',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
