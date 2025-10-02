@@ -1,0 +1,62 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { TrendingUp, Users, Map, Award } from "lucide-react";
+
+const impacts = [
+  {
+    icon: <TrendingUp className="h-8 w-8 text-primary" />,
+    value: "50+",
+    title: "Campaigns Managed",
+    description: "Successfully steered campaigns across diverse constituencies with data-driven strategies."
+  },
+  {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    value: "10,000+",
+    title: "Youth Engaged",
+    description: "Mobilized and trained young volunteers, creating a powerful grassroots network."
+  },
+  {
+    icon: <Map className="h-8 w-8 text-primary" />,
+    value: "5+",
+    title: "States Covered",
+    description: "Our strategic footprint extends across multiple states, adapting to regional political dynamics."
+  },
+  {
+    icon: <Award className="h-8 w-8 text-primary" />,
+    value: "80%",
+    title: "Success Rate",
+    description: "Achieved a high success rate in electoral contests and policy implementation projects."
+  }
+];
+
+const ImpactSection = () => {
+  return (
+    <section id="impact" className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Our Impact So Far</h2>
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            We measure our success by the tangible results we deliver for our clients and the communities they serve.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {impacts.map((item, index) => (
+            <Card key={index} className="text-center group hover:bg-primary/5 transition-colors duration-300">
+              <CardHeader className="items-center">
+                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {item.icon}
+                </div>
+                <p className="text-5xl font-bold font-headline text-primary">{item.value}</p>
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-2 text-xl font-semibold">{item.title}</CardTitle>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ImpactSection;
