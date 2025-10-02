@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-dvh min-h-[700px] flex items-center justify-center text-center overflow-hidden bg-primary/10 aurora-background">
+    <section className="relative w-full h-dvh min-h-[700px] flex items-center justify-center text-center overflow-hidden bg-primary/10">
       <div className="relative z-10 flex flex-col items-center space-y-8 px-4 animate-fade-in-up">
         <div className="rounded-full bg-white/10 p-4 backdrop-blur-sm border border-white/20 shadow-2xl">
           <Logo className="w-24 h-24 text-white drop-shadow-lg" />
