@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Shuffle, DoorOpen, Archive, BarChart, Cpu } from "lucide-react";
 
 const challenges = {
@@ -40,25 +39,28 @@ const challenges = {
 
 const ChallengesSection = () => {
   return (
-    <section id="challenges" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-card overflow-hidden">
+    <section id="challenges" className="w-full py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Problems We Solve</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
             We tackle the critical challenges that hinder political and administrative progress in India.
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
+        <div className="relative max-w-6xl mx-auto">
+          <div className="absolute top-1/2 left-0 w-full h-px bg-border -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/2 w-px h-full bg-border -translate-x-1/2 hidden lg:block"></div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-16 lg:gap-y-24">
 
             {/* Political Consulting */}
-            <div className="space-y-12">
+            <div className="space-y-12 lg:pr-12">
               <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent">Political Consulting</h3>
               <ul className="space-y-10">
                 {challenges.political.map((challenge, index) => (
                   <li key={index} className="flex items-start gap-6">
-                    <div className="flex-shrink-0 mt-1 p-3 bg-accent/10 rounded-full ring-4 ring-accent/20">
+                    <div className="flex-shrink-0 mt-1 p-3 bg-accent/10 rounded-full">
                       {challenge.icon}
                     </div>
                     <div>
@@ -71,12 +73,12 @@ const ChallengesSection = () => {
             </div>
             
             {/* Governance Consulting */}
-            <div className="space-y-12">
+            <div className="space-y-12 lg:pl-12">
               <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary">Governance Consulting</h3>
               <ul className="space-y-10">
                 {challenges.governance.map((challenge, index) => (
                   <li key={index} className="flex items-start gap-6">
-                    <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full ring-4 ring-primary/20">
+                    <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
                       {challenge.icon}
                     </div>
                     <div>
