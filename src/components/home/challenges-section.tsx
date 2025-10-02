@@ -48,38 +48,49 @@ const ChallengesSection = () => {
             We tackle the critical challenges that hinder political and administrative progress in India.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="space-y-8 relative">
-             <div className="absolute -top-8 -left-8 w-48 h-48 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
-            <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent">Political Consulting</h3>
-            <div className="space-y-10">
-              {challenges.political.map((challenge, index) => (
-                <div key={index} className="flex gap-6 items-start">
-                  <div className="p-3 bg-accent/10 rounded-full ring-2 ring-accent/20">{challenge.icon}</div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
-                    <p className="text-muted-foreground text-base">{challenge.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="space-y-8 relative">
-            <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse animation-delay-2000"></div>
-            <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary">Governance Consulting</h3>
-            <div className="space-y-10">
-              {challenges.governance.map((challenge, index) => (
-                <div key={index} className="flex gap-6 items-start">
-                    <div className="p-3 bg-primary/10 rounded-full ring-2 ring-primary/20">{challenge.icon}</div>
-                    <div>
-                        <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
-                        <p className="text-muted-foreground text-base">{challenge.description}</p>
+        
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
+
+            {/* Political Consulting */}
+            <div className="space-y-12">
+              <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent">Political Consulting</h3>
+              <ul className="space-y-10">
+                {challenges.political.map((challenge, index) => (
+                  <li key={index} className="flex items-start gap-6">
+                    <div className="flex-shrink-0 mt-1 p-3 bg-accent/10 rounded-full ring-4 ring-accent/20">
+                      {challenge.icon}
                     </div>
-                </div>
-              ))}
+                    <div>
+                      <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
+                      <p className="text-muted-foreground">{challenge.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
+            
+            {/* Governance Consulting */}
+            <div className="space-y-12">
+              <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary">Governance Consulting</h3>
+              <ul className="space-y-10">
+                {challenges.governance.map((challenge, index) => (
+                  <li key={index} className="flex items-start gap-6">
+                    <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full ring-4 ring-primary/20">
+                      {challenge.icon}
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
+                      <p className="text-muted-foreground">{challenge.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );
