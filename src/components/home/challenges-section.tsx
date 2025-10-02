@@ -48,54 +48,45 @@ const ChallengesSection = () => {
           </p>
         </div>
         
-        <div className="relative max-w-6xl mx-auto">
-          <div className="absolute top-1/2 left-0 w-full h-px bg-border -translate-y-1/2"></div>
-          <div className="absolute top-1/2 left-1/2 w-px h-full bg-border -translate-x-1/2 hidden lg:block"></div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-16 lg:gap-y-24">
-
-            {/* Political Consulting */}
-            <div className="space-y-12 lg:pr-12">
-              <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent">Political Consulting</h3>
-              <ul className="space-y-10">
-                {challenges.political.map((challenge, index) => (
-                  <li key={index} className="flex items-start gap-6">
-                    <div className="flex-shrink-0 mt-1 p-3 bg-accent/10 rounded-full">
-                      {challenge.icon}
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
-                      <p className="text-muted-foreground">{challenge.description}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
+          <div className="w-full">
+            <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent mb-12">Political Consulting</h3>
+            <div className="space-y-12">
+              {challenges.political.map((challenge, index) => (
+                <div key={index} className="flex items-start gap-6">
+                  <div className="flex-shrink-0 mt-1 p-3 bg-accent/10 rounded-full">
+                    {challenge.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
+                    <p className="text-muted-foreground">{challenge.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-            
-            {/* Governance Consulting */}
-            <div className="space-y-12 lg:pl-12">
-              <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary">Governance Consulting</h3>
-              <ul className="space-y-10">
-                {challenges.governance.map((challenge, index) => (
-                  <li key={index} className="flex items-start gap-6">
-                    <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
-                      {challenge.icon}
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
-                      <p className="text-muted-foreground">{challenge.description}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          </div>
 
+          <div className="w-full">
+            <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary mb-12">Governance Consulting</h3>
+            <div className="space-y-12">
+              {challenges.governance.map((challenge, index) => (
+                <div key={index} className="flex items-start gap-6">
+                  <div className="flex-shrink-0 mt-1 p-3 bg-primary/10 rounded-full">
+                    {challenge.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
+                    <p className="text-muted-foreground">{challenge.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   );
 };
+
 
 export default ChallengesSection;
