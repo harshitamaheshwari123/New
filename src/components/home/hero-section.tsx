@@ -1,30 +1,12 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Logo } from '@/components/icons';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
 const HeroSection = () => {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'parliament-background');
-
   return (
-    <section className="relative w-full h-dvh min-h-[700px] flex items-center justify-center text-center overflow-hidden">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          data-ai-hint={heroImage.imageHint}
-          fill
-          priority
-          className="object-cover brightness-50"
-        />
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-primary/30 to-transparent" />
-      
-      <div className="absolute top-0 left-0 w-full h-full bg-grid-white/[0.05]"></div>
-
+    <section className="relative w-full h-dvh min-h-[700px] flex items-center justify-center text-center overflow-hidden bg-primary/10 aurora-background">
       <div className="relative z-10 flex flex-col items-center space-y-8 px-4 animate-fade-in-up">
-        <div className="rounded-full bg-white/10 p-4 backdrop-blur-sm border border-white/20">
+        <div className="rounded-full bg-white/10 p-4 backdrop-blur-sm border border-white/20 shadow-2xl">
           <Logo className="w-24 h-24 text-white drop-shadow-lg" />
         </div>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-headline tracking-tight text-white drop-shadow-md">
