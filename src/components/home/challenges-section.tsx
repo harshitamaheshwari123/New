@@ -52,34 +52,30 @@ const ChallengesSection = () => {
           <div className="space-y-8 relative">
              <div className="absolute -top-8 -left-8 w-48 h-48 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
             <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-accent">Political Consulting</h3>
-            <div className="space-y-6">
+            <div className="space-y-10">
               {challenges.political.map((challenge, index) => (
-                <Card key={index} className="transition-all duration-300 hover:shadow-xl border-l-4 border-accent bg-accent/5 glass-card">
-                  <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                    <div className="p-3 bg-white/50 rounded-full shadow-md">{challenge.icon}</div>
-                    <CardTitle className="text-xl font-bold">{challenge.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
+                <div key={index} className="flex gap-6 items-start">
+                  <div className="p-3 bg-accent/10 rounded-full ring-2 ring-accent/20">{challenge.icon}</div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
                     <p className="text-muted-foreground text-base">{challenge.description}</p>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
           <div className="space-y-8 relative">
             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse animation-delay-2000"></div>
             <h3 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary">Governance Consulting</h3>
-            <div className="space-y-6">
+            <div className="space-y-10">
               {challenges.governance.map((challenge, index) => (
-                <Card key={index} className="transition-all duration-300 hover:shadow-xl border-l-4 border-primary bg-primary/5 glass-card">
-                  <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                    <div className="p-3 bg-white/50 rounded-full shadow-md">{challenge.icon}</div>
-                    <CardTitle className="text-xl font-bold">{challenge.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-base">{challenge.description}</p>
-                  </CardContent>
-                </Card>
+                <div key={index} className="flex gap-6 items-start">
+                    <div className="p-3 bg-primary/10 rounded-full ring-2 ring-primary/20">{challenge.icon}</div>
+                    <div>
+                        <h4 className="text-xl font-bold mb-1">{challenge.title}</h4>
+                        <p className="text-muted-foreground text-base">{challenge.description}</p>
+                    </div>
+                </div>
               ))}
             </div>
           </div>
