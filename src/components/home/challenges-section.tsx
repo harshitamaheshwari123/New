@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const challenges = [
   {
-    title: "Lack of Career Pathways",
-    description: "Lack of structured career pathways in political consulting, public policy, and governance for students.",
+    title: "Expensive, Elite Consulting",
+    description: "Established firms like I-PAC/Nation with NaMo are large and inaccessible. We offer lean, affordable, and youth-driven consulting models for smaller parties and individual leaders.",
   },
   {
-    title: "Limited Access to Opportunities",
-    description: "No clear guidance on how to get internships/fellowships (MP/MLA offices, think tanks, consulting firms).",
+    title: "Unstructured Campaigning",
+    description: "Most local and regional leaders still rely on intuition, family, or outdated methods. We're bringing data-driven strategy and structured frameworks.",
   },
   {
-    title: "Skill Gaps",
-    description: "Students struggle with resumes, SOPs, case studies, and interview prep to this niche sector.",
+    title: "Lack of Youth Entry Points",
+    description: "Thousands of young people want to work in politics but have no clear path. We create career pipelines into consulting, MP/MLA offices, and governance roles.",
   },
 ];
 
@@ -39,13 +39,8 @@ const ChallengesSection = () => {
           </FadeIn>
           <FadeIn delay="duration-700">
             <div className="inline-block bg-background px-4 py-2 rounded-lg shadow">
-              <h3 className="text-2xl font-body font-bold text-foreground">Building Bharat Academy</h3>
+              <h3 className="text-2xl font-body font-bold text-foreground">Building Bharat Political Consulting</h3>
             </div>
-          </FadeIn>
-          <FadeIn delay="duration-1000">
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed italic">
-              Students lack a clear entry into politics and governance.
-            </p>
           </FadeIn>
         </div>
         
@@ -53,14 +48,36 @@ const ChallengesSection = () => {
           {challenges.map((challenge, index) => (
             <FadeIn key={index} delay={`duration-${500 + index * 300}`}>
               <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/20 h-full flex flex-col transition-transform hover:-translate-y-2">
-                <h4 className="text-xl font-headline font-bold text-primary mb-4 pb-2 border-b-2 border-accent">
-                  {challenge.title}
-                </h4>
-                <p className="text-muted-foreground text-base flex-grow">{challenge.description}</p>
+                <div className="bg-primary text-primary-foreground py-2 px-4 rounded-md mb-6 shadow-md -mt-12 mx-auto">
+                  <h4 className="text-lg font-headline font-bold text-center">
+                    {challenge.title}
+                  </h4>
+                </div>
+                <p className="text-muted-foreground text-base flex-grow text-center">{challenge.description}</p>
               </div>
             </FadeIn>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-4 right-4 text-primary opacity-10">
+        <svg width="80" height="80" viewBox="0 0 100 100">
+          <circle cx="20" cy="20" r="4"/>
+          <circle cx="40" cy="20" r="4"/>
+          <circle cx="60" cy="20" r="4"/>
+          <circle cx="80" cy="20" r="4"/>
+          <circle cx="20" cy="40" r="4"/>
+          <circle cx="40" cy="40" r="4"/>
+          <circle cx="60" cy="40" r="4"/>
+          <circle cx="80" cy="40" r="4"/>
+          <circle cx="20" cy="60" r="4"/>
+          <circle cx="40" cy="60" r="4"/>
+          <circle cx="60"cy="60" r="4"/>
+          <circle cx="80" cy="60" r="4"/>
+          <circle cx="20" cy="80" r="4"/>
+          <circle cx="40" cy="80" r="4"/>
+          <circle cx="60" cy="80" r="4"/>
+          <circle cx="80" cy="80" r="4"/>
+        </svg>
       </div>
     </section>
   );
