@@ -1,7 +1,22 @@
 import FadeIn from "../ui/fade-in";
 import Image from "next/image";
 
-const challenges = [
+const academyChallenges = [
+  {
+    title: "Lack of Career Pathways",
+    description: "Young individuals passionate about governance and policy often struggle to find structured entry points into the field.",
+  },
+  {
+    title: "Limited Access to Opportunities",
+    description: "Practical experience, mentorship, and networking opportunities in the political and governance sectors are scarce.",
+  },
+  {
+    title: "Skill Gaps",
+    description: "There's a disconnect between academic knowledge and the practical skills required to be effective in political and policy roles.",
+  },
+];
+
+const consultingChallenges = [
   {
     title: "Expensive, Elite Consulting",
     description: "Established firms like I-PAC/Nation with NaMo are large and inaccessible. We offer lean, affordable, and youth-driven consulting models for smaller parties and individual leaders.",
@@ -15,6 +30,7 @@ const challenges = [
     description: "Thousands of young people want to work in politics but have no clear path. We create career pipelines into consulting, MP/MLA offices, and governance roles.",
   },
 ];
+
 
 const ChallengesSection = () => {
   return (
@@ -39,13 +55,36 @@ const ChallengesSection = () => {
           </FadeIn>
           <FadeIn delay="duration-700">
             <div className="inline-block bg-background px-4 py-2 rounded-lg shadow">
+              <h3 className="text-2xl font-body font-bold text-foreground">Building Bharat Academy</h3>
+            </div>
+          </FadeIn>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {academyChallenges.map((challenge, index) => (
+            <FadeIn key={index} delay={`duration-${500 + index * 300}`}>
+              <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/20 h-full flex flex-col transition-transform hover:-translate-y-2">
+                <div className="bg-primary text-primary-foreground py-2 px-4 rounded-md mb-6 shadow-md -mt-12 mx-auto">
+                  <h4 className="text-lg font-headline font-bold text-center">
+                    {challenge.title}
+                  </h4>
+                </div>
+                <p className="text-muted-foreground text-base flex-grow text-center">{challenge.description}</p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mt-24 mb-16">
+          <FadeIn>
+            <div className="inline-block bg-background px-4 py-2 rounded-lg shadow">
               <h3 className="text-2xl font-body font-bold text-foreground">Building Bharat Political Consulting</h3>
             </div>
           </FadeIn>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {challenges.map((challenge, index) => (
+          {consultingChallenges.map((challenge, index) => (
             <FadeIn key={index} delay={`duration-${500 + index * 300}`}>
               <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/20 h-full flex flex-col transition-transform hover:-translate-y-2">
                 <div className="bg-primary text-primary-foreground py-2 px-4 rounded-md mb-6 shadow-md -mt-12 mx-auto">
