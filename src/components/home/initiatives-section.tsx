@@ -1,65 +1,105 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenTool, Mic, Lightbulb } from "lucide-react";
+import Image from 'next/image';
 
-const activeIn = ["Delhi University", "JNU", "IIT Bombay", "IIM Ahmedabad", "Ashoka University", "NLSIU Bangalore"];
+const activeIn = [
+  "NIT Jamshedpur",
+  "KL University",
+  "HIT Haldia",
+  "NIT Silchar",
+  "Vidyavardhaka College of Engineering",
+  "University Institute of Technology, The University of Burdwan",
+];
 
 const initiatives = [
-  {
-    icon: <PenTool className="h-8 w-8 text-accent" />,
-    title: "Policy Drafting Workshops",
-    description: "Training the next generation of policymakers with hands-on workshops on legislative drafting and analysis."
-  },
-  {
-    icon: <Mic className="h-8 w-8 text-accent" />,
-    title: "Youth Parliament Program",
-    description: "A national-level simulation of parliamentary proceedings to foster debate and leadership among students."
-  },
-  {
-    icon: <Lightbulb className="h-8 w-8 text-accent" />,
-    title: "Governance Hackathons",
-    description: "Bringing together tech enthusiasts and policy wonks to solve real-world governance challenges."
-  }
+  "UPSC Talks",
+  "Mentorship Programs",
+  "Policy Podcasts",
+  "Policy Research Internship Program",
+  "SANSAD- Youth Indian Parliament",
+  "Learning beyond the classroom",
 ];
 
 const InitiativesSection = () => {
   return (
-    <section id="initiatives" className="w-full py-24 md:py-32 lg:py-40 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-          <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Public Policy & Governance Society</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Fostering a community of future leaders dedicated to public service and effective governance.
+    <section id="initiatives" className="relative w-full py-24 md:py-32 lg:py-40 bg-secondary/30 overflow-hidden">
+       <Image
+        src="https://picsum.photos/seed/parliament-fade/1920/1080"
+        alt="Faded Parliament Background"
+        fill
+        className="object-cover opacity-10"
+        data-ai-hint="indian parliament government"
+      />
+      <div className="absolute top-0 right-0 h-48 w-full md:w-1/3">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full">
+            <path d="M0,0 Q50,50 100,0 L100,0 0,0 Z" fill="hsl(var(--accent))"  transform="scale(1, -1) translate(0, -100)"/>
+            <path d="M0,0 Q50,60 100,0 L100,0 0,0 Z" fill="hsl(var(--accent) / 0.6)" transform="scale(1.1, -1.2) translate(-5, -85)"/>
+          </svg>
+      </div>
+
+      <div className="relative container mx-auto px-4 md:px-6 z-10">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-body font-bold tracking-tight text-primary">
+            Public Policy and Governance Society
+          </h2>
+          <p className="text-lg font-headline tracking-widest text-muted-foreground">
+            EMPOWER. INSPIRE. TRANSFORM.
           </p>
         </div>
 
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-center mb-8 text-primary">Our Initiatives</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {initiatives.map((initiative, index) => (
-                <div key={index} className="flex flex-col text-center items-center p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-lg border-t-4 border-accent">
-                  <div className="p-4 bg-accent/10 rounded-full mb-4">
-                    {initiative.icon}
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">{initiative.title}</h4>
-                  <p className="text-muted-foreground">{initiative.description}</p>
-                </div>
-              ))}
-            </div>
+        <div className="max-w-4xl mx-auto">
+          <div className="border border-foreground/30 p-6 mb-12 text-center bg-background/50 backdrop-blur-sm rounded-lg shadow-sm">
+            <p className="text-lg text-muted-foreground">
+              Our sister <strong className="font-semibold text-foreground">India's largest student-led organization</strong>, is active in 10 colleges across India with the aim of engaging youth in shaping better governance and policy solutions.
+            </p>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-semibold text-center mb-8 text-primary">Active In</h3>
-            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-              {activeIn.map((place, index) => (
-                <Badge key={index} variant="secondary" className="text-base py-2 px-4 rounded-full transition-transform hover:scale-110 bg-primary/5 hover:bg-primary/10 text-primary">
-                  {place}
-                </Badge>
-              ))}
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="border border-foreground/30 rounded-lg shadow-lg bg-background/50 backdrop-blur-sm">
+              <div className="bg-primary text-primary-foreground p-4 rounded-t-lg">
+                <h3 className="text-xl font-headline font-bold text-center">
+                  Public Policy and Governance Society active in:
+                </h3>
+              </div>
+              <ul className="p-6 space-y-2">
+                {activeIn.map((place, index) => (
+                  <li key={index} className="text-muted-foreground">{place}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="border border-foreground/30 rounded-lg shadow-lg bg-background/50 backdrop-blur-sm">
+              <div className="bg-primary text-primary-foreground p-4 rounded-t-lg">
+                <h3 className="text-xl font-headline font-bold text-center">
+                  Our Initiatives
+                </h3>
+              </div>
+              <ul className="p-6 space-y-2">
+                {initiatives.map((initiative, index) => (
+                  <li key={index} className="text-muted-foreground">{initiative}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-4 right-4 text-primary opacity-10">
+        <svg width="80" height="80" viewBox="0 0 100 100">
+          <circle cx="20" cy="20" r="4"/>
+          <circle cx="40" cy="20" r="4"/>
+          <circle cx="60" cy="20" r="4"/>
+          <circle cx="80" cy="20" r="4"/>
+          <circle cx="20" cy="40" r="4"/>
+          <circle cx="40" cy="40" r="4"/>
+          <circle cx="60" cy="40" r="4"/>
+          <circle cx="80" cy="40" r="4"/>
+          <circle cx="20" cy="60" r="4"/>
+          <circle cx="40" cy="60" r="4"/>
+          <circle cx="60" cy="60" r="4"/>
+          <circle cx="80" cy="60" r="4"/>
+          <circle cx="20" cy="80" r="4"/>
+          <circle cx="40" cy="80" r="4"/>
+          <circle cx="60" cy="80" r="4"/>
+          <circle cx="80" cy="80" r="4"/>
+        </svg>
       </div>
     </section>
   );
