@@ -32,13 +32,13 @@ const Header = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-transparent' : 'bg-transparent'
+        isScrolled ? 'bg-transparent' : 'bg-accent'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className={cn("w-8 h-8", isScrolled ? 'text-primary' : 'text-white')} />
-          <span className={cn("font-headline text-xl font-bold", isScrolled ? 'text-primary' : 'text-white')}>
+          <Logo className={cn("w-8 h-8", 'text-white')} />
+          <span className={cn("font-headline text-xl font-bold", 'text-white')}>
             Building Bharat
           </span>
         </Link>
@@ -47,7 +47,7 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={cn("text-sm font-medium transition-colors hover:text-accent", isScrolled ? 'text-foreground' : 'text-white')}
+              className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? 'text-foreground' : 'text-white')}
             >
               {link.label}
             </Link>
