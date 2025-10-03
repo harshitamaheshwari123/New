@@ -6,13 +6,17 @@ const AboutSection = () => {
     <section id="about" className="relative w-full py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <FadeIn className="space-y-6">
-            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Who We Are</h2>
-            <p className="text-muted-foreground text-lg/relaxed">
-              Building Bharat is a premier political and governance consulting firm dedicated to shaping the future of Indian leadership. We bridge the gap between policy and people, fostering a new generation of leaders equipped with strategic insight and a commitment to grassroots engagement.
-            </p>
-            <div className="space-y-4">
-              <FadeIn delay="duration-700">
+          <div className="space-y-8">
+            <FadeIn>
+              <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Who We Are</h2>
+            </FadeIn>
+            <FadeIn delay="duration-700">
+              <p className="text-muted-foreground text-lg/relaxed">
+                Building Bharat is a premier political and governance consulting firm dedicated to shaping the future of Indian leadership. We bridge the gap between policy and people, fostering a new generation of leaders equipped with strategic insight and a commitment to grassroots engagement.
+              </p>
+            </FadeIn>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
+              <FadeIn delay="duration-1000">
                 <div>
                   <h3 className="font-headline text-xl font-bold text-accent mb-2">Our Vision</h3>
                   <p className="text-muted-foreground">
@@ -20,7 +24,7 @@ const AboutSection = () => {
                   </p>
                 </div>
               </FadeIn>
-              <FadeIn delay="duration-1000">
+              <FadeIn delay="duration-1000" className='sm:!duration-[1200ms]'>
                 <div>
                   <h3 className="font-headline text-xl font-bold text-accent mb-2">Our Mission</h3>
                   <p className="text-muted-foreground">
@@ -29,7 +33,7 @@ const AboutSection = () => {
                 </div>
               </FadeIn>
             </div>
-          </FadeIn>
+          </div>
           <FadeIn className="relative h-80 md:h-[500px] rounded-xl overflow-hidden shadow-2xl" delay="duration-700">
              <Image
               src="https://picsum.photos/seed/about/800/1000"
