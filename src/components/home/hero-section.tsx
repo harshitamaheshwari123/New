@@ -13,7 +13,7 @@ const HeroSection = () => {
           src={parliamentImage.imageUrl}
           alt={parliamentImage.description}
           fill
-          className="object-cover grayscale"
+          className="object-cover"
           data-ai-hint={parliamentImage.imageHint}
           priority
         />
