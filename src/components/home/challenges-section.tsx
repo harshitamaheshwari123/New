@@ -31,6 +31,21 @@ const consultingChallenges = [
   },
 ];
 
+const governanceChallenges = [
+    {
+        title: "Outdated Governance Systems",
+        description: "Most government offices still run on paper files & manual processes. We bring digital-first governance solutions."
+    },
+    {
+        title: "Lack of Real-Time Data",
+        description: "Policy decisions are made on outdated surveys. We create real-time citizen feedback loops, AI-driven sentiment analysis, and data dashboards for DMs, MLAs, and departments."
+    },
+    {
+        title: "No Structured Role for Youth in Tech-Gov",
+        description: "While youth want to contribute, there's no framework. We design fellowships + live projects in AI-for-Gov, data analysis, and civic-tech for students."
+    }
+]
+
 
 const ChallengesSection = () => {
   return (
@@ -85,6 +100,34 @@ const ChallengesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {consultingChallenges.map((challenge, index) => (
+            <FadeIn key={index} delay={`duration-${500 + index * 300}`}>
+              <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/20 h-full flex flex-col transition-transform hover:-translate-y-2">
+                <div className="bg-primary text-primary-foreground py-2 px-4 rounded-md mb-6 shadow-md -mt-12 mx-auto">
+                  <h4 className="text-lg font-headline font-bold text-center">
+                    {challenge.title}
+                  </h4>
+                </div>
+                <p className="text-muted-foreground text-base flex-grow text-center">{challenge.description}</p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mt-24 mb-16">
+          <FadeIn>
+            <div className="inline-block bg-background px-4 py-2 rounded-lg shadow">
+              <h3 className="text-2xl font-body font-bold text-foreground">Building Bharat Governance Consulting</h3>
+            </div>
+          </FadeIn>
+           <FadeIn delay="duration-700">
+            <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed">
+              Governance is outdated, opaque, and citizen-distant.
+            </p>
+          </FadeIn>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {governanceChallenges.map((challenge, index) => (
             <FadeIn key={index} delay={`duration-${500 + index * 300}`}>
               <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/20 h-full flex flex-col transition-transform hover:-translate-y-2">
                 <div className="bg-primary text-primary-foreground py-2 px-4 rounded-md mb-6 shadow-md -mt-12 mx-auto">
