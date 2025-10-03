@@ -1,6 +1,7 @@
 'use client';
 import { TrendingUp, Users, Map, Award } from "lucide-react";
 import { useEffect, useRef, useState } from 'react';
+import FadeIn from "../ui/fade-in";
 
 const impacts = [
   {
@@ -98,23 +99,29 @@ const ImpactSection = () => {
     <section id="impact" className="w-full py-24 md:py-32 lg:py-40 bg-secondary/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-          <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Our Impact So Far</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            We measure our success by the tangible results we deliver for our clients and the communities they serve.
-          </p>
+          <FadeIn>
+            <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl text-primary">Our Impact So Far</h2>
+          </FadeIn>
+          <FadeIn delay="duration-700">
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+              We measure our success by the tangible results we deliver for our clients and the communities they serve.
+            </p>
+          </FadeIn>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {impacts.map((item, index) => (
-            <div key={index} className="text-center group p-6 hover:-translate-y-2 transition-all duration-300 border-b-4 border-primary bg-background shadow-lg rounded-xl">
-              <div className="flex flex-col items-center h-full">
-                <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
-                  {item.icon}
+            <FadeIn key={index} delay={`duration-${500 + index * 200}`}>
+              <div className="text-center group p-6 hover:-translate-y-2 transition-all duration-300 border-b-4 border-primary bg-background shadow-lg rounded-xl h-full">
+                <div className="flex flex-col items-center h-full">
+                  <div className="p-4 bg-primary/10 rounded-full mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
+                    {item.icon}
+                  </div>
+                  <Counter value={item.value} suffix={item.suffix} />
+                  <h3 className="mb-2 mt-4 text-xl font-semibold">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm flex-grow">{item.description}</p>
                 </div>
-                <Counter value={item.value} suffix={item.suffix} />
-                <h3 className="mb-2 mt-4 text-xl font-semibold">{item.title}</h3>
-                <p className="text-muted-foreground text-sm flex-grow">{item.description}</p>
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>
