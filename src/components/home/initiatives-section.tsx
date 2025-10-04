@@ -29,13 +29,7 @@ const InitiativesSection = () => {
         className="object-cover opacity-10"
         data-ai-hint="indian parliament government"
       />
-      <div className="absolute top-0 right-0 h-48 w-full md:w-1/3">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full">
-            <path d="M0,0 Q50,50 100,0 L100,0 0,0 Z" fill="hsl(var(--accent))"  transform="scale(1, -1) translate(0, -100)"/>
-            <path d="M0,0 Q50,60 100,0 L100,0 0,0 Z" fill="hsl(var(--accent) / 0.6)" transform="scale(1.1, -1.2) translate(-5, -85)"/>
-          </svg>
-      </div>
-
+      
       <div className="relative container mx-auto px-4 md:px-6 z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <FadeIn>
