@@ -75,20 +75,7 @@ const ChallengesSection = () => {
         className="object-cover opacity-10"
         data-ai-hint="parliament government background"
       />
-      <div className="absolute top-0 left-0 z-0 w-full overflow-hidden leading-none">
-        <svg
-          viewBox="0 0 1440 120"
-          xmlns="http://www.w3.org/2000/svg"
-          className="relative block h-[60px] w-full md:h-[120px]"
-        >
-          <path
-            d="M0,64L40,80C80,96,160,128,240,122.7C320,117,400,75,480,58.7C560,43,640,53,720,80C800,107,880,149,960,154.7C1040,160,1120,128,1200,106.7C1280,85,1360,75,1400,69.3L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-            fill="hsl(var(--accent))"
-            fillOpacity="1"
-          ></path>
-        </svg>
-      </div>
-
+      
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
           <FadeIn>

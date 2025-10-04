@@ -1,5 +1,5 @@
 'use client';
-import { Briefcase, Users, Linkedin, Building2, Link } from "lucide-react";
+import { Building2, Link } from "lucide-react";
 import { useEffect, useRef, useState } from 'react';
 import FadeIn from "../ui/fade-in";
 
@@ -108,12 +108,6 @@ const ImpactSection = () => {
     <section id="impact" className="relative w-full py-24 md:py-32 lg:py-40 bg-background">
        <div className="absolute inset-0 bg-white/50" />
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583407386527-820c9281cfd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBwYXJsaWFtZW50JTIwZ292ZXJubWVudHxlbnwwfHx8fDE3NTk0MjM5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080')] bg-cover bg-center opacity-10 grayscale"></div>
-
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-10">
-        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" className="relative block w-full h-[120px] md:h-[180px]">
-          <path d="M0,64L40,80C80,96,160,128,240,122.7C320,117,400,75,480,58.7C560,43,640,53,720,80C800,107,880,149,960,154.7C1040,160,1120,128,1200,106.7C1280,85,1360,75,1400,69.3L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z" fill="hsl(var(--accent))"></path>
-        </svg>
-      </div>
 
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
