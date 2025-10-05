@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Logo } from '../icons';
+import { Logo } from '../logo';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '../ui/sheet';
@@ -37,7 +37,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className={cn("h-6 w-auto", isScrolled ? 'text-primary' : 'text-white')} />
+          <Logo className="h-6 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
