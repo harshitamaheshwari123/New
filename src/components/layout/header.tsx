@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Logo } from '../icons';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '../ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navLinks = [
@@ -61,6 +61,7 @@ const Header = () => {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
                   <Logo className="w-8 h-8 text-primary" />
