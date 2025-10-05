@@ -32,15 +32,12 @@ const Header = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-transparent' : 'bg-accent'
+        isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-md' : 'bg-accent'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className={cn("w-8 h-8", 'text-white')} />
-          <span className={cn("font-headline text-xl font-bold", 'text-white')}>
-            Building Bharat
-          </span>
+          <Logo className="h-6 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -64,10 +61,7 @@ const Header = () => {
               <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                  <Logo className="w-8 h-8 text-primary" />
-                  <span className="font-headline text-xl font-bold text-primary">
-                    Building Bharat
-                  </span>
+                  <Logo className="h-6 w-auto text-primary" />
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
