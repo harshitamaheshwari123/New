@@ -37,7 +37,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Logo className="h-6 w-auto" />
+          <Logo className={cn("h-6 w-auto", isScrolled ? 'text-primary' : 'text-white')} />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (

@@ -11,7 +11,7 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
     <text
       x="24"
       y="18"
-      fill="white"
+      fill="currentColor"
       fontFamily="Poppins, sans-serif"
       fontSize="16"
       fontWeight="bold"
