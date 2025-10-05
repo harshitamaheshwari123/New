@@ -11,8 +11,7 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
     strokeLinejoin="round"
     {...props}
   >
-    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-    <path d="M2 17l10 5 10-5" />
-    <path d="M2 12l10 5 10-5" />
+    <path d="M12.333 4L5 9.333V20h14V9.333L12.333 4zM19 20h-4.333v-5.333H9.667V20H5" stroke="none" fill="hsl(var(--accent))" />
+    <path d="M11.5 14.667H9.667V20h4.666v-5.333h-2.833z" stroke="none" fill="hsl(var(--primary))" />
   </svg>
 );
