@@ -1,12 +1,13 @@
-import HeroSection from '@/components/home/hero-section';
-import AboutSection from '@/components/home/about-section';
-import ServicesSection from '@/components/home/services-section';
-import ChallengesSection from '@/components/home/challenges-section';
-import ImpactSection from '@/components/home/impact-section';
-import InitiativesSection from '@/components/home/initiatives-section';
-import Footer from '@/components/layout/footer';
-import Header from '@/components/layout/header';
-import FadeIn from '@/components/ui/fade-in';
+import HeroSection from "@/components/home/hero-section";
+import AboutSection from "@/components/home/about-section";
+import ServicesSection from "@/components/home/services-section";
+import ChallengesSection from "@/components/home/challenges-section";
+import ImpactSection from "@/components/home/impact-section";
+import InitiativesSection from "@/components/home/initiatives-section";
+import Footer from "@/components/layout/footer";
+import HaveQuestionsLetsTalk from "@/components/home/HaveQuestionsLetsTalk";
+import Header from "@/components/layout/header";
+import FadeIn from "@/components/ui/fade-in";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         <FadeIn>
           <ServicesSection />
         </FadeIn>
-        
+
         <FadeIn>
           <ChallengesSection />
         </FadeIn>
@@ -34,6 +35,8 @@ export default function Home() {
         <FadeIn>
           <InitiativesSection />
         </FadeIn>
+
+        <HaveQuestionsLetsTalk />
       </main>
       <Footer />
     </div>

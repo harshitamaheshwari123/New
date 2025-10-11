@@ -1,61 +1,56 @@
-'use client';
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from '@/components/ui/tabs';
-import FadeIn from '../ui/fade-in';
-import Image from 'next/image';
+"use client";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import FadeIn from "../ui/fade-in";
+import Image from "next/image";
 
 const challenges = {
   academy: [
     {
-      title: 'Lack of Career Pathways',
+      title: "Lack of Career Pathways",
       description:
-        'Young individuals passionate about governance and policy often struggle to find structured entry points into the field.',
+        "Young individuals passionate about governance and policy often struggle to find structured entry points into the field.",
     },
     {
-      title: 'Limited Access to Opportunities',
+      title: "Limited Access to Opportunities",
       description:
-        'Practical experience, mentorship, and networking opportunities in the political and governance sectors are scarce.',
+        "Practical experience, mentorship, and networking opportunities in the political and governance sectors are scarce.",
     },
     {
-      title: 'Skill Gaps',
+      title: "Skill Gaps",
       description:
         "There's a disconnect between academic knowledge and the practical skills required to be effective in political and policy roles.",
     },
   ],
   political: [
     {
-      title: 'Expensive, Elite Consulting',
+      title: "Expensive, Elite Consulting",
       description:
-        'Established firms are large and inaccessible. We offer lean, affordable, youth-driven consulting for smaller parties and individual leaders.',
+        "Established firms are large and inaccessible. We offer lean, affordable, youth-driven consulting for smaller parties and individual leaders.",
     },
     {
-      title: 'Unstructured Campaigning',
+      title: "Unstructured Campaigning",
       description:
-        'Most local leaders still rely on intuition or outdated methods. We bring data-driven strategy and structured frameworks to the forefront.',
+        "Most local leaders still rely on intuition or outdated methods. We bring data-driven strategy and structured frameworks to the forefront.",
     },
     {
-      title: 'Lack of Youth Entry Points',
+      title: "Lack of Youth Entry Points",
       description:
-        'Thousands of young people want to work in politics but have no clear path. We create career pipelines into consulting and governance roles.',
+        "Thousands of young people want to work in politics but have no clear path. We create career pipelines into consulting and governance roles.",
     },
   ],
   governance: [
     {
-      title: 'Outdated Governance Systems',
+      title: "Outdated Governance Systems",
       description:
-        'Many government offices still run on paper files and manual processes. We introduce and implement digital-first governance solutions.',
+        "Many government offices still run on paper files and manual processes. We introduce and implement digital-first governance solutions.",
     },
     {
-      title: 'Lack of Real-Time Data',
+      title: "Lack of Real-Time Data",
       description:
-        'Policy decisions are often made on outdated surveys. We create real-time citizen feedback loops and AI-driven data dashboards.',
+        "Policy decisions are often made on outdated surveys. We create real-time citizen feedback loops and AI-driven data dashboards.",
     },
     {
-      title: 'No Structured Role for Youth',
+      title: "No Structured Role for Youth",
       description:
         "While youth want to contribute, there's no framework. We design fellowships and live projects in AI-for-Gov, data analysis, and civic-tech.",
     },
@@ -66,7 +61,7 @@ const ChallengesSection = () => {
   return (
     <section
       id="challenges"
-      className="relative w-full overflow-hidden bg-secondary/30 py-24 md:py-32 lg:py-40"
+      className="relative w-full overflow-hidden bg-secondary/30 py-12 md:py-16 lg:py-20"
     >
       <Image
         src="https://picsum.photos/seed/challenge-bg/1920/1080"
@@ -75,9 +70,9 @@ const ChallengesSection = () => {
         className="object-cover opacity-10"
         data-ai-hint="parliament government background"
       />
-      
+
       <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="mb-16 flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="mb-8 flex flex-col items-center justify-center space-y-4 text-center">
           <FadeIn>
             <h2 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
               The Problem We Solve
@@ -95,13 +90,22 @@ const ChallengesSection = () => {
         <Tabs defaultValue="academy" className="w-full max-w-4xl mx-auto">
           <FadeIn>
             <TabsList className="grid w-full grid-cols-3 bg-background/70 backdrop-blur-sm p-2 h-auto rounded-xl shadow-md border border-primary/10">
-              <TabsTrigger value="academy" className="rounded-lg text-sm md:text-base py-3">
-                Academy
-              </TabsTrigger>
-              <TabsTrigger value="political" className="rounded-lg text-sm md:text-base py-3">
+              <TabsTrigger
+                value="political"
+                className="rounded-lg text-sm md:text-base py-3"
+              >
                 Political Consulting
               </TabsTrigger>
-              <TabsTrigger value="governance" className="rounded-lg text-sm md:text-base py-3">
+              <TabsTrigger
+                value="academy"
+                className="rounded-lg text-sm md:text-base py-3"
+              >
+                Academy
+              </TabsTrigger>
+              <TabsTrigger
+                value="governance"
+                className="rounded-lg text-sm md:text-base py-3"
+              >
                 Governance Consulting
               </TabsTrigger>
             </TabsList>
