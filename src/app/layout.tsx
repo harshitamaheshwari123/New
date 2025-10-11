@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Bharat Rise",
+  title: "Building Bharat",
   description:
     "From aspiration to action - we empower political journeys with the science of strategy and the heart of grassroots connection.",
   icons: {

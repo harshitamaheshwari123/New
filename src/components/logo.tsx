@@ -8,7 +8,7 @@ interface LogoProps
 }
 
 export const Logo = ({ className, scrolled = false, ...rest }: LogoProps) => {
-  const logoSrc = scrolled ? "/bharat.png" : "/logo.jpg";
+  const logoSrc = "/logo.jpg";
 
   return (
     <img

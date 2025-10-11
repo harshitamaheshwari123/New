@@ -1,5 +1,4 @@
 "use client";
-import { Building2, Link } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import FadeIn from "../ui/fade-in";
 
@@ -7,7 +6,7 @@ const topImpacts = [
   {
     value: 35,
     suffix: "+",
-    title: "Interns at Building Bharat",
+    title: "Interns at Bharat Rise",
   },
   {
     value: 10,
@@ -24,12 +23,10 @@ const topImpacts = [
 
 const bottomImpacts = [
   {
-    icon: <Building2 className="h-8 w-8 text-primary" />,
     description:
       "10 Ex- UPSC Aspirants  are part of our UPSC Cohort whoappeared in the mains at leastonce, 3 already placed in PC firms",
   },
   {
-    icon: <Link className="h-8 w-8 text-primary" />,
     description:
       "Our work connects students, young professionals, and leaders, creating pathways for careers in politics, governance, and public policy.",
   },
@@ -145,8 +142,7 @@ const ImpactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {bottomImpacts.map((item, index) => (
             <FadeIn key={index} delay={`duration-${900 + index * 200}`}>
-              <div className="p-6 bg-background border border-foreground/30 shadow-lg rounded-xl h-full flex items-center gap-4">
-                {item.icon}
+              <div className="p-6 bg-background border border-foreground/30 shadow-lg rounded-xl h-full flex items-center">
                 <p className="text-muted-foreground text-lg">
                   {item.description}
                 </p>
