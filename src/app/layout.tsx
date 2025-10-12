@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   description:
     "From aspiration to action - we empower political journeys with the science of strategy and the heart of grassroots connection.",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon.png?v=2?v=2",
+    shortcut: "/favicon.png?v=2?v=2",
+    apple: "/favicon.png?v=2?v=2",
   },
 };
 
@@ -21,24 +21,29 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-        <link rel="icon" href="/favicon.png" type="image/png" key="site-icon" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=2" />
+        <link rel="shortcut icon" href="/favicon.png?v=2" type="image/png" />
         <link
           rel="icon"
-          href="/favicon.png"
+          href="/favicon.png?v=2"
+          type="image/png"
+          key="site-icon"
+        />
+        <link
+          rel="icon"
+          href="/favicon.png?v=2"
           type="image/png"
           sizes="32x32"
           key="icon-32"
         />
         <link
           rel="icon"
-          href="/favicon.png"
+          href="/favicon.png?v=2"
           type="image/png"
           sizes="16x16"
           key="icon-16"
         />
-        <link rel="apple-touch-icon" href="/favicon.png" key="apple-icon" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=2" key="apple-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

@@ -12,15 +12,15 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: "/favicon.png",
+        destination: "/favicon.png?v=2",
       },
       {
         source: "/favicon.png",
-        destination: "/favicon.png",
+        destination: "/favicon.png?v=2",
       },
       {
         source: "/favicon",
-        destination: "/favicon.png",
+        destination: "/favicon.png?v=2",
       },
     ];
   },
@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "no-cache, no-store, must-revalidate",
+            value: "no-cache, no-store, must-revalidate, max-age=0",
           },
           { key: "Pragma", value: "no-cache" },
           { key: "Expires", value: "0" },
@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "no-cache, no-store, must-revalidate",
+            value: "no-cache, no-store, must-revalidate, max-age=0",
           },
           { key: "Pragma", value: "no-cache" },
           { key: "Expires", value: "0" },
