@@ -12,15 +12,18 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: "/favicon.png?v=2",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
       {
         source: "/favicon.png",
-        destination: "/favicon.png?v=2",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
       {
         source: "/favicon",
-        destination: "/favicon.png?v=2",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
     ];
   },
