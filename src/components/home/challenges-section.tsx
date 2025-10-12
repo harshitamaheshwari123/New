@@ -87,7 +87,7 @@ const ChallengesSection = () => {
           </FadeIn>
         </div>
 
-        <Tabs defaultValue="academy" className="w-full max-w-6xl mx-auto">
+        <Tabs defaultValue="political" className="w-full max-w-6xl mx-auto">
           <FadeIn>
             <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 bg-background/70 backdrop-blur-sm p-1 sm:p-2 h-auto rounded-xl shadow-md border border-primary/10 gap-1">
               <TabsTrigger
@@ -113,9 +113,9 @@ const ChallengesSection = () => {
             </TabsList>
           </FadeIn>
           <FadeIn className="mt-6 sm:mt-8" delay="duration-700">
-            <TabsContent value="academy">
+            <TabsContent value="political">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {challenges.academy.map((challenge, index) => (
+                {challenges.political.map((challenge, index) => (
                   <div
                     key={index}
                     className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-4 sm:p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
@@ -130,9 +130,9 @@ const ChallengesSection = () => {
                 ))}
               </div>
             </TabsContent>
-            <TabsContent value="political">
+            <TabsContent value="academy">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {challenges.political.map((challenge, index) => (
+                {challenges.academy.map((challenge, index) => (
                   <div
                     key={index}
                     className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-4 sm:p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"

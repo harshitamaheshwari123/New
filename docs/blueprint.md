@@ -1,4 +1,4 @@
-# **App Name**: Bharat Rise
+# **App Name**: Building Bharat
 
 ## Core Features:
 

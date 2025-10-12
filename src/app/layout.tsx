@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   description:
     "From aspiration to action - we empower political journeys with the science of strategy and the heart of grassroots connection.",
   icons: {
-    icon: "/logo.jpg",
-    shortcut: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -21,27 +21,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" key="site-icon" />
         <link
           rel="icon"
-          href="/logo.jpg?v=3"
-          type="image/jpeg"
-          key="site-icon"
-        />
-        <link
-          rel="icon"
-          href="/logo.jpg?v=3"
-          type="image/jpeg"
+          href="/favicon.png"
+          type="image/png"
           sizes="32x32"
           key="icon-32"
         />
         <link
           rel="icon"
-          href="/logo.jpg?v=3"
-          type="image/jpeg"
+          href="/favicon.png"
+          type="image/png"
           sizes="16x16"
           key="icon-16"
         />
-        <link rel="apple-touch-icon" href="/logo.jpg?v=3" key="apple-icon" />
+        <link rel="apple-touch-icon" href="/favicon.png" key="apple-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

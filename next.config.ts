@@ -12,7 +12,15 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: "/logo.jpg",
+        destination: "/favicon.png",
+      },
+      {
+        source: "/favicon.png",
+        destination: "/favicon.png",
+      },
+      {
+        source: "/favicon",
+        destination: "/favicon.png",
       },
     ];
   },
@@ -21,13 +29,25 @@ const nextConfig: NextConfig = {
       {
         source: "/favicon.ico",
         headers: [
-          { key: "Cache-Control", value: "no-store, must-revalidate" },
-          { key: "Content-Type", value: "image/jpeg" },
+          {
+            key: "Cache-Control",
+            value: "no-cache, no-store, must-revalidate",
+          },
+          { key: "Pragma", value: "no-cache" },
+          { key: "Expires", value: "0" },
+          { key: "Content-Type", value: "image/png" },
         ],
       },
       {
         source: "/logo.jpg",
-        headers: [{ key: "Cache-Control", value: "no-store, must-revalidate" }],
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "no-cache, no-store, must-revalidate",
+          },
+          { key: "Pragma", value: "no-cache" },
+          { key: "Expires", value: "0" },
+        ],
       },
     ];
   },

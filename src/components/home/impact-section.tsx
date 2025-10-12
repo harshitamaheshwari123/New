@@ -4,9 +4,9 @@ import FadeIn from "../ui/fade-in";
 
 const topImpacts = [
   {
-    value: 35,
-    suffix: "+",
-    title: "Interns at Bharat Rise",
+    value: 4,
+    suffix: "",
+    title: "MLA clients in Bihar election",
   },
   {
     value: 10,
@@ -24,7 +24,7 @@ const topImpacts = [
 const bottomImpacts = [
   {
     description:
-      "10 Ex- UPSC Aspirants  are part of our UPSC Cohort whoappeared in the mains at leastonce, 3 already placed in PC firms",
+      "10 Ex- UPSC Aspirants  are part of our UPSC Cohort who appeared in the mains at leastonce, 3 already placed in PC firms",
   },
   {
     description:
