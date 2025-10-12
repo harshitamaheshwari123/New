@@ -71,15 +71,15 @@ const ChallengesSection = () => {
         data-ai-hint="parliament government background"
       />
 
-      <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="mb-8 flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-6 sm:mb-8 lg:mb-12 flex flex-col items-center justify-center space-y-3 sm:space-y-4 text-center">
           <FadeIn>
-            <h2 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <h2 className="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter text-primary leading-tight">
               The Problem We Solve
             </h2>
           </FadeIn>
           <FadeIn delay="duration-700">
-            <p className="max-w-3xl text-muted-foreground md:text-lg/relaxed">
+            <p className="max-w-3xl text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
               We tackle critical gaps across the political and governance
               landscape, from nurturing new talent to modernizing established
               systems.
@@ -87,41 +87,43 @@ const ChallengesSection = () => {
           </FadeIn>
         </div>
 
-        <Tabs defaultValue="academy" className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="academy" className="w-full max-w-6xl mx-auto">
           <FadeIn>
-            <TabsList className="grid w-full grid-cols-3 bg-background/70 backdrop-blur-sm p-2 h-auto rounded-xl shadow-md border border-primary/10">
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 bg-background/70 backdrop-blur-sm p-1 sm:p-2 h-auto rounded-xl shadow-md border border-primary/10 gap-1">
               <TabsTrigger
                 value="political"
-                className="rounded-lg text-sm md:text-base py-3"
+                className="rounded-lg text-xs sm:text-sm md:text-base py-2 sm:py-3 px-2 sm:px-4 whitespace-nowrap sm:whitespace-normal"
               >
-                Political Consulting
+                <span className="hidden sm:inline">Political Consulting</span>
+                <span className="sm:hidden">Political</span>
               </TabsTrigger>
               <TabsTrigger
                 value="academy"
-                className="rounded-lg text-sm md:text-base py-3"
+                className="rounded-lg text-xs sm:text-sm md:text-base py-2 sm:py-3 px-2 sm:px-4"
               >
                 Academy
               </TabsTrigger>
               <TabsTrigger
                 value="governance"
-                className="rounded-lg text-sm md:text-base py-3"
+                className="rounded-lg text-xs sm:text-sm md:text-base py-2 sm:py-3 px-2 sm:px-4 whitespace-nowrap sm:whitespace-normal"
               >
-                Governance Consulting
+                <span className="hidden sm:inline">Governance Consulting</span>
+                <span className="sm:hidden">Governance</span>
               </TabsTrigger>
             </TabsList>
           </FadeIn>
-          <FadeIn className="mt-8" delay="duration-700">
+          <FadeIn className="mt-6 sm:mt-8" delay="duration-700">
             <TabsContent value="academy">
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {challenges.academy.map((challenge, index) => (
                   <div
                     key={index}
-                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-6 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-2"
+                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-4 sm:p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                   >
-                    <h3 className="mb-3 font-headline text-lg font-bold text-primary">
+                    <h3 className="mb-3 font-headline text-base sm:text-lg font-bold text-primary leading-tight">
                       {challenge.title}
                     </h3>
-                    <p className="flex-grow text-muted-foreground">
+                    <p className="flex-grow text-muted-foreground text-sm sm:text-base leading-relaxed">
                       {challenge.description}
                     </p>
                   </div>
@@ -129,16 +131,16 @@ const ChallengesSection = () => {
               </div>
             </TabsContent>
             <TabsContent value="political">
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {challenges.political.map((challenge, index) => (
                   <div
                     key={index}
-                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-6 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-2"
+                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-4 sm:p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                   >
-                    <h3 className="mb-3 font-headline text-lg font-bold text-primary">
+                    <h3 className="mb-3 font-headline text-base sm:text-lg font-bold text-primary leading-tight">
                       {challenge.title}
                     </h3>
-                    <p className="flex-grow text-muted-foreground">
+                    <p className="flex-grow text-muted-foreground text-sm sm:text-base leading-relaxed">
                       {challenge.description}
                     </p>
                   </div>
@@ -146,16 +148,16 @@ const ChallengesSection = () => {
               </div>
             </TabsContent>
             <TabsContent value="governance">
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {challenges.governance.map((challenge, index) => (
                   <div
                     key={index}
-                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-6 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-2"
+                    className="flex h-full flex-col rounded-xl border border-primary/20 bg-background/80 p-4 sm:p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                   >
-                    <h3 className="mb-3 font-headline text-lg font-bold text-primary">
+                    <h3 className="mb-3 font-headline text-base sm:text-lg font-bold text-primary leading-tight">
                       {challenge.title}
                     </h3>
-                    <p className="flex-grow text-muted-foreground">
+                    <p className="flex-grow text-muted-foreground text-sm sm:text-base leading-relaxed">
                       {challenge.description}
                     </p>
                   </div>

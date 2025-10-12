@@ -68,7 +68,7 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="https://www.instagram.com/building.bharat/"
+              href="https://www.instagram.com/building.bharat/?hl=en"
               target="_blank"
               aria-label="Instagram"
             >
@@ -83,6 +83,16 @@ export default function Footer() {
               aria-label="WhatsApp"
             >
               <MessageCircle
+                size={40}
+                className="text-white hover:text-gray-300 transition-colors"
+              />
+            </Link>
+            <Link
+              href="https://thebuildingbharat.com/"
+              target="_blank"
+              aria-label="Website"
+            >
+              <Globe
                 size={40}
                 className="text-white hover:text-gray-300 transition-colors"
               />
