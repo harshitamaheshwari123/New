@@ -12,18 +12,15 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination:
-          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+        destination: "/favicon.ico",
       },
       {
         source: "/favicon.png",
-        destination:
-          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+        destination: "/favicon.ico",
       },
       {
         source: "/favicon",
-        destination:
-          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+        destination: "/favicon.ico",
       },
     ];
   },
@@ -38,7 +35,7 @@ const nextConfig: NextConfig = {
           },
           { key: "Pragma", value: "no-cache" },
           { key: "Expires", value: "0" },
-          { key: "Content-Type", value: "image/png" },
+          { key: "Content-Type", value: "image/x-icon" },
         ],
       },
       {
