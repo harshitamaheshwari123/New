@@ -7,9 +7,11 @@ export const metadata: Metadata = {
   description:
     "From aspiration to action - we empower political journeys with the science of strategy and the heart of grassroots connection.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+    shortcut:
+      "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+    apple:
+      "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
   },
 };
 
@@ -21,29 +23,41 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link
           rel="icon"
-          href="/favicon.ico"
-          type="image/x-icon"
+          type="image/png"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+        />
+        <link
+          rel="shortcut icon"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+          type="image/png"
           key="site-icon"
         />
         <link
           rel="icon"
-          href="/favicon.ico"
-          type="image/x-icon"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+          type="image/png"
           sizes="32x32"
           key="icon-32"
         />
         <link
           rel="icon"
-          href="/favicon.ico"
-          type="image/x-icon"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+          type="image/png"
           sizes="16x16"
           key="icon-16"
         />
-        <link rel="apple-touch-icon" href="/favicon.ico" key="apple-icon" />
+        <link
+          rel="apple-touch-icon"
+          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
+          key="apple-icon"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

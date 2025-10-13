@@ -12,15 +12,18 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: "/favicon.ico",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
       {
         source: "/favicon.png",
-        destination: "/favicon.ico",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
       {
         source: "/favicon",
-        destination: "/favicon.ico",
+        destination:
+          "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
       },
     ];
   },
@@ -29,24 +32,8 @@ const nextConfig: NextConfig = {
       {
         source: "/favicon.ico",
         headers: [
-          {
-            key: "Cache-Control",
-            value: "no-cache, no-store, must-revalidate, max-age=0",
-          },
-          { key: "Pragma", value: "no-cache" },
-          { key: "Expires", value: "0" },
-          { key: "Content-Type", value: "image/x-icon" },
-        ],
-      },
-      {
-        source: "/logo.jpg",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "no-cache, no-store, must-revalidate, max-age=0",
-          },
-          { key: "Pragma", value: "no-cache" },
-          { key: "Expires", value: "0" },
+          { key: "Cache-Control", value: "no-store, must-revalidate" },
+          { key: "Content-Type", value: "image/png" },
         ],
       },
     ];
