@@ -74,8 +74,8 @@ export async function POST(request: Request) {
                   </a>
                 </td>
                 <td align="center" style="padding:6px; width:50%;">
-                  <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
+                  <a href="https://www.youtube.com/@thebuildingBharat" style="text-decoration:none; display:inline-block;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="24" alt="YouTube" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                   </a>
                 </td>
               </tr>
@@ -179,8 +179,8 @@ export async function POST(request: Request) {
                     </a>
                   </td>
                   <td align="center" style="padding:6px; width:50%;">
-                    <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
+                    <a href="https://www.youtube.com/@thebuildingBharat" style="text-decoration:none; display:inline-block;">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="24" alt="YouTube" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                     </a>
                   </td>
                 </tr>
