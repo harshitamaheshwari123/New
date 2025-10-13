@@ -24,7 +24,7 @@ const topImpacts = [
 const bottomImpacts = [
   {
     description:
-      "10 Ex- UPSC Aspirants  are part of our UPSC Cohort who appeared in the mains at leastonce, 3 already placed in PC firms",
+      "10 Ex- UPSC Aspirants  are part of our UPSC Cohort who appeared in the mains atleast once, 3 already placed in PC firms",
   },
   {
     description:

@@ -52,9 +52,8 @@ const InitiativesSection = () => {
           <FadeIn delay="duration-1000">
             <div className="border border-foreground/30 p-6 mb-12 text-center bg-background/50 backdrop-blur-sm rounded-lg shadow-sm">
               <p className="text-lg text-muted-foreground">
-                Our sister{" "}
                 <strong className="font-semibold text-foreground">
-                  India's largest student-led organization
+                  India's largest Public Policy student-led organization
                 </strong>
                 , is active in 10 colleges across India with the aim of engaging
                 youth in shaping better governance and policy solutions.

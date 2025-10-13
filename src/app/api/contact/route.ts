@@ -43,6 +43,9 @@ export async function POST(request: Request) {
       subject: `New Contact Form Submission from ${fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="text-align: center; margin: 16px 0 24px;">
+            <img src="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png" alt="Building Bharat" width="64" height="64" style="display: block; margin: 0 auto; border-radius: 8px;" />
+          </div>
           <h2 style="color: #006655; border-bottom: 2px solid #FF6F00; padding-bottom: 10px;">
             New Contact Form Submission
           </h2>
@@ -63,20 +66,30 @@ export async function POST(request: Request) {
           
           <div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
             <h3 style="color: #006655; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">Connect with us on social media</h3>
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: center;">
-              <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="32" alt="LinkedIn" style="border-radius: 4px; display: block;" />
-              </a>
-              <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="32" alt="Instagram" style="border-radius: 4px; display: block;" />
-              </a>
-              <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="32" alt="WhatsApp" style="border-radius: 4px; display: block;" />
-              </a>
-              <a href="https://thebuildingbharat.com/" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="32" alt="Website" style="border-radius: 4px; display: block;" />
-              </a>
-            </div>
+            <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+              <tr>
+                <td align="center" style="padding:0 10px;">
+                  <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration:none; display:inline-block;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                  </a>
+                </td>
+                <td align="center" style="padding:0 10px;">
+                  <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                  </a>
+                </td>
+                <td align="center" style="padding:0 10px;">
+                  <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration:none; display:inline-block;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                  </a>
+                </td>
+                <td align="center" style="padding:0 10px;">
+                  <a href="https://thebuildingbharat.com/" style="text-decoration:none; display:inline-block;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="40" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                  </a>
+                </td>
+              </tr>
+            </table>
             <p style="color: #6c757d; font-size: 14px; margin: 15px 0 0 0; font-style: italic;">Follow us for updates and insights</p>
           </div>
           
@@ -119,6 +132,9 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: linear-gradient(135deg, #006655 0%, #FF6F00 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+            <div style="text-align: center; margin-bottom: 12px;">
+              <img src="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png" alt="Building Bharat" width="72" height="72" style="display: block; margin: 0 auto; border-radius: 8px; background: #ffffff; padding: 4px;" />
+            </div>
             <h1 style="color: white; margin: 0; font-size: 28px;">Building Bharat</h1>
             <p style="color: white; margin: 10px 0 0 0; font-size: 16px;">Empowering Political Journeys</p>
           </div>
@@ -153,20 +169,30 @@ export async function POST(request: Request) {
             
             <div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
               <h3 style="color: #006655; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">Connect with us on social media</h3>
-              <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: center;">
-                <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="32" alt="LinkedIn" style="border-radius: 4px; display: block;" />
-                </a>
-                <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="32" alt="Instagram" style="border-radius: 4px; display: block;" />
-                </a>
-                <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="32" alt="WhatsApp" style="border-radius: 4px; display: block;" />
-                </a>
-                <a href="https://thebuildingbharat.com/" style="text-decoration: none; display: inline-block; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="32" alt="Website" style="border-radius: 4px; display: block;" />
-                </a>
-              </div>
+              <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+                <tr>
+                  <td align="center" style="padding:0 10px;">
+                    <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration:none; display:inline-block;">
+                      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    </a>
+                  </td>
+                  <td align="center" style="padding:0 10px;">
+                    <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
+                      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    </a>
+                  </td>
+                  <td align="center" style="padding:0 10px;">
+                    <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration:none; display:inline-block;">
+                      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    </a>
+                  </td>
+                  <td align="center" style="padding:0 10px;">
+                    <a href="https://thebuildingbharat.com/" style="text-decoration:none; display:inline-block;">
+                      <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="40" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
               <p style="color: #6c757d; font-size: 14px; margin: 15px 0 0 0; font-style: italic;">Follow us for updates and insights</p>
             </div>
             
