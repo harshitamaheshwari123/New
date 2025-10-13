@@ -108,9 +108,6 @@ const ImpactSection = () => {
       id="impact"
       className="relative w-full py-12 md:py-16 lg:py-20 bg-background"
     >
-      <div className="absolute inset-0 bg-white/50" />
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583407386527-820c9281cfd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBwYXJsaWFtZW50JTIwZ292ZXJubWVudHxlbnwwfHx8fDE3NTk0MjM5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080')] bg-cover bg-center opacity-10 grayscale"></div>
-
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
           <FadeIn>

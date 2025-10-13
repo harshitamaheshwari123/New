@@ -66,26 +66,28 @@ export async function POST(request: Request) {
           
           <div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
             <h3 style="color: #006655; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">Connect with us on social media</h3>
-            <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+            <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%; max-width:280px;">
               <tr>
-                <td align="center" style="padding:0 10px;">
+                <td align="center" style="padding:6px; width:50%;">
                   <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration:none; display:inline-block;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                   </a>
                 </td>
-                <td align="center" style="padding:0 10px;">
+                <td align="center" style="padding:6px; width:50%;">
                   <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                   </a>
                 </td>
-                <td align="center" style="padding:0 10px;">
+              </tr>
+              <tr>
+                <td align="center" style="padding:6px; width:50%;">
                   <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration:none; display:inline-block;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                   </a>
                 </td>
-                <td align="center" style="padding:0 10px;">
+                <td align="center" style="padding:6px; width:50%;">
                   <a href="https://thebuildingbharat.com/" style="text-decoration:none; display:inline-block;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="40" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="24" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                   </a>
                 </td>
               </tr>
@@ -169,26 +171,28 @@ export async function POST(request: Request) {
             
             <div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
               <h3 style="color: #006655; margin: 0 0 20px 0; font-size: 18px; font-weight: 600;">Connect with us on social media</h3>
-              <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+              <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%; max-width:280px;">
                 <tr>
-                  <td align="center" style="padding:0 10px;">
+                  <td align="center" style="padding:6px; width:50%;">
                     <a href="https://www.linkedin.com/company/buildingbharat/posts/?feedView=all" style="text-decoration:none; display:inline-block;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" alt="LinkedIn" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                     </a>
                   </td>
-                  <td align="center" style="padding:0 10px;">
+                  <td align="center" style="padding:6px; width:50%;">
                     <a href="https://www.instagram.com/building.bharat/?hl=en" style="text-decoration:none; display:inline-block;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24" alt="Instagram" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                     </a>
                   </td>
-                  <td align="center" style="padding:0 10px;">
+                </tr>
+                <tr>
+                  <td align="center" style="padding:6px; width:50%;">
                     <a href="https://whatsapp.com/channel/0029Vb6EEEw5Ejy3yymn7E3T" style="text-decoration:none; display:inline-block;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24" alt="WhatsApp" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                     </a>
                   </td>
-                  <td align="center" style="padding:0 10px;">
+                  <td align="center" style="padding:6px; width:50%;">
                     <a href="https://thebuildingbharat.com/" style="text-decoration:none; display:inline-block;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="40" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:4px;" />
+                      <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" width="24" alt="Website" style="display:block; border-radius:8px; background:#ffffff; padding:6px;" />
                     </a>
                   </td>
                 </tr>

@@ -267,7 +267,7 @@ export default function HaveQuestionsLetsTalk() {
                     <div>
                       <input
                         type="tel"
-                        placeholder="Phone Number (optional — We\'ll only call if needed)"
+                        placeholder="Phone Number"
                         value={formData.phone}
                         onChange={(e) =>
                           handleInputChange("phone", e.target.value)
@@ -419,7 +419,7 @@ export default function HaveQuestionsLetsTalk() {
                       Thank you for your message!
                     </div>
                     <p className="text-gray-600">
-                      We\'ve received your inquiry and will get back to you
+                      We've received your inquiry and will get back to you
                       soon.
                     </p>
                   </div>
