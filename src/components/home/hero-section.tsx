@@ -13,7 +13,7 @@ const HeroSection = () => {
       {/* Background Image */}
       {parliamentImage && (
         <Image
-          src="/6.jpg"
+          src="/WhatsApp Image 2025-10-14 at 09.31.21_d782bf7c.jpg"
           alt="New Indian Parliament Building Inside Golden"
           fill
           className="object-cover brightness-75"
@@ -42,8 +42,6 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      
-      
       {/* Centered content */}
       <div className="relative z-20 flex flex-col items-center space-y-6 px-4 animate-fade-in-up mt-8 text-white">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-headline tracking-tight drop-shadow-2xl">

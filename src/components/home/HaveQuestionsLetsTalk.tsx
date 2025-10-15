@@ -100,11 +100,11 @@ export default function HaveQuestionsLetsTalk() {
   return (
     <section
       ref={sectionRef}
-      className="px-4 sm:px-6 md:px-8 lg:px-20"
+      className="px-3 xs:px-4 sm:px-6 md:px-8 lg:px-20"
       style={{ background: "#E5E7EA" }}
     >
-      <div className="container mx-auto py-8 lg:py-12">
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start">
+      <div className="container mx-auto py-6 sm:py-8 lg:py-12">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-8 items-start">
           {/* Left Side - Black Placeholder */}
           <div
             className={`w-full lg:w-1/2 transition-all duration-1000 ease-out ${
@@ -114,14 +114,23 @@ export default function HaveQuestionsLetsTalk() {
             }`}
           >
             <div
-              className="w-full h-64 lg:h-[400px] rounded-lg relative overflow-hidden"
-              style={{ background: "#000000" }}
+              className="w-full h-40 xs:h-44 sm:h-52 md:h-60 lg:h-72 xl:h-80 2xl:h-[400px] rounded-lg relative overflow-hidden responsive-image-container"
+              style={{
+                background: "#000000",
+                minWidth: "100%",
+                maxWidth: "100%",
+              }}
             >
               <img
                 src="/logo.jpg"
                 alt="Building Bharat Logo"
-                className="w-full h-full object-cover"
-                style={{ filter: "brightness(1.1) contrast(1.1)" }}
+                className="w-full h-full object-fill"
+                style={{
+                  filter: "brightness(1.1) contrast(1.1)",
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "fill",
+                }}
               />
             </div>
           </div>
@@ -419,8 +428,7 @@ export default function HaveQuestionsLetsTalk() {
                       Thank you for your message!
                     </div>
                     <p className="text-gray-600">
-                      We've received your inquiry and will get back to you
-                      soon.
+                      We've received your inquiry and will get back to you soon.
                     </p>
                   </div>
                 )}
@@ -431,6 +439,55 @@ export default function HaveQuestionsLetsTalk() {
       </div>
 
       <style jsx>{`
+        /* Responsive image container */
+        .responsive-image-container {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+        .responsive-image-container img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: fill !important;
+          object-position: center !important;
+        }
+        @media (max-width: 475px) {
+          .responsive-image-container {
+            height: 160px !important;
+            min-height: 160px;
+          }
+        }
+        @media (min-width: 476px) and (max-width: 639px) {
+          .responsive-image-container {
+            height: 176px !important;
+          }
+        }
+        @media (min-width: 640px) and (max-width: 767px) {
+          .responsive-image-container {
+            height: 208px !important;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .responsive-image-container {
+            height: 240px !important;
+          }
+        }
+        @media (min-width: 1024px) and (max-width: 1279px) {
+          .responsive-image-container {
+            height: 288px !important;
+          }
+        }
+        @media (min-width: 1280px) and (max-width: 1535px) {
+          .responsive-image-container {
+            height: 320px !important;
+          }
+        }
+        @media (min-width: 1536px) {
+          .responsive-image-container {
+            height: 400px !important;
+          }
+        }
+
         /* Left side slide animations */
         @keyframes leftSlideIn {
           0% {
