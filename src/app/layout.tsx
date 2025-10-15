@@ -7,11 +7,10 @@ export const metadata: Metadata = {
   description:
     "From aspiration to action - we empower political journeys with the science of strategy and the heart of grassroots connection.",
   icons: {
-    icon: "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
-    shortcut:
-      "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
-    apple:
-      "https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png",
+    // Use local public assets so favicon works the same after deployment
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -23,41 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link
-          rel="icon"
-          type="image/png"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-        />
-        <link
-          rel="shortcut icon"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-          type="image/png"
-        />
-        <link
-          rel="icon"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-          type="image/png"
-          key="site-icon"
-        />
-        <link
-          rel="icon"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-          type="image/png"
-          sizes="32x32"
-          key="icon-32"
-        />
-        <link
-          rel="icon"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-          type="image/png"
-          sizes="16x16"
-          key="icon-16"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="https://buildingbharatresume.s3.ap-south-1.amazonaws.com/emailImages/bb1.png"
-          key="apple-icon"
-        />
+        {/* Use local public paths so favicons work in dev and production */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
