@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function HaveQuestionsLetsTalk() {
   const [submitted, setSubmitted] = useState(false);
@@ -100,11 +101,11 @@ export default function HaveQuestionsLetsTalk() {
   return (
     <section
       ref={sectionRef}
-      className="px-3 xs:px-4 sm:px-6 md:px-8 lg:px-20"
+      className="px-2 xs:px-3 sm:px-4 md:px-6 lg:px-20"
       style={{ background: "#E5E7EA" }}
     >
-      <div className="container mx-auto py-6 sm:py-8 lg:py-12">
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-8 items-start">
+      <div className="container mx-auto py-4 sm:py-6 lg:py-8">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 items-start">
           {/* Left Side - Black Placeholder */}
           <div
             className={`w-full lg:w-1/2 transition-all duration-1000 ease-out ${
@@ -113,23 +114,18 @@ export default function HaveQuestionsLetsTalk() {
                 : "animate-left-slide-out"
             }`}
           >
-            <div
-              className="w-full h-40 xs:h-44 sm:h-52 md:h-60 lg:h-72 xl:h-80 2xl:h-[400px] rounded-lg relative overflow-hidden responsive-image-container"
-              style={{
-                background: "#000000",
-                minWidth: "100%",
-                maxWidth: "100%",
-              }}
-            >
-              <img
+            <div className="w-full max-w-xs mx-auto sm:max-w-sm md:max-w-md lg:max-w-none lg:w-full h-24 xs:h-32 sm:h-40 md:h-48 lg:h-60 xl:h-72 2xl:h-80 rounded-lg relative overflow-hidden bg-black responsive-image-container">
+              <Image
                 src="/logo.jpg"
                 alt="Building Bharat Logo"
-                className="w-full h-full object-fill"
+                fill
+                className="object-fill brightness-110 contrast-110"
+                sizes="(max-width: 375px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 50vw, 50vw"
+                priority={false}
                 style={{
-                  filter: "brightness(1.1) contrast(1.1)",
+                  objectFit: "fill",
                   width: "100%",
                   height: "100%",
-                  objectFit: "fill",
                 }}
               />
             </div>
@@ -445,31 +441,58 @@ export default function HaveQuestionsLetsTalk() {
           min-width: 100% !important;
           max-width: 100% !important;
         }
+
+        /* Reduce width and increase height on mobile devices */
+        @media (max-width: 639px) {
+          .responsive-image-container {
+            max-width: 240px !important;
+            width: 100% !important;
+          }
+        }
+        @media (min-width: 640px) and (max-width: 767px) {
+          .responsive-image-container {
+            max-width: 280px !important;
+            width: 100% !important;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .responsive-image-container {
+            max-width: 320px !important;
+            width: 100% !important;
+          }
+        }
         .responsive-image-container img {
           width: 100% !important;
           height: 100% !important;
           object-fit: fill !important;
           object-position: center !important;
         }
-        @media (max-width: 475px) {
+
+        /* Device-specific responsive heights - increased height, reduced width */
+        @media (max-width: 375px) {
           .responsive-image-container {
-            height: 160px !important;
-            min-height: 160px;
+            height: 96px !important;
+            min-height: 96px;
+          }
+        }
+        @media (min-width: 376px) and (max-width: 475px) {
+          .responsive-image-container {
+            height: 128px !important;
           }
         }
         @media (min-width: 476px) and (max-width: 639px) {
           .responsive-image-container {
-            height: 176px !important;
+            height: 160px !important;
           }
         }
         @media (min-width: 640px) and (max-width: 767px) {
           .responsive-image-container {
-            height: 208px !important;
+            height: 192px !important;
           }
         }
         @media (min-width: 768px) and (max-width: 1023px) {
           .responsive-image-container {
-            height: 240px !important;
+            height: 224px !important;
           }
         }
         @media (min-width: 1024px) and (max-width: 1279px) {
@@ -484,7 +507,7 @@ export default function HaveQuestionsLetsTalk() {
         }
         @media (min-width: 1536px) {
           .responsive-image-container {
-            height: 400px !important;
+            height: 384px !important;
           }
         }
 

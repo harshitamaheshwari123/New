@@ -16,7 +16,7 @@ const HeroSection = () => {
           src="/WhatsApp Image 2025-10-14 at 09.31.21_d782bf7c.jpg"
           alt="New Indian Parliament Building Inside Golden"
           fill
-          className="object-cover brightness-75"
+          className="object-cover brightness-110"
           priority
         />
       )}

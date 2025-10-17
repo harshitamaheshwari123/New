@@ -8,6 +8,43 @@ import Footer from "@/components/layout/footer";
 import HaveQuestionsLetsTalk from "@/components/home/HaveQuestionsLetsTalk";
 import Header from "@/components/layout/header";
 import FadeIn from "@/components/ui/fade-in";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Building Bharat - Leading political consulting and strategy services in India. We empower political journeys with expert strategy and grassroots connection.",
+  keywords: [
+    "political consulting India",
+    "political strategy services",
+    "campaign management India",
+    "election consulting",
+    "political marketing",
+    "grassroots organizing",
+    "political communication",
+    "Building Bharat home",
+  ],
+  openGraph: {
+    title: "Building Bharat - Political Consulting & Strategy Services",
+    description:
+      "Leading political consulting and strategy services in India. Expert guidance for political campaigns and grassroots organizing.",
+    url: "https://buildingbharat.com",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Building Bharat - Political Consulting Services",
+      },
+    ],
+  },
+  twitter: {
+    title: "Building Bharat - Political Consulting & Strategy Services",
+    description:
+      "Leading political consulting and strategy services in India. Expert guidance for political campaigns and grassroots organizing.",
+    images: ["/logo.jpg"],
+  },
+};
 
 export default function Home() {
   return (
