@@ -114,7 +114,7 @@ export default function HaveQuestionsLetsTalk() {
                 : "animate-left-slide-out"
             }`}
           >
-            <div className="w-full max-w-xs mx-auto sm:max-w-sm md:max-w-md lg:max-w-none lg:w-full h-24 xs:h-32 sm:h-40 md:h-48 lg:h-60 xl:h-72 2xl:h-80 rounded-lg relative overflow-hidden bg-black responsive-image-container">
+            <div className="w-full mx-auto lg:max-w-none lg:w-full h-24 xs:h-32 sm:h-40 md:h-48 lg:h-60 xl:h-72 2xl:h-80 rounded-lg relative overflow-hidden bg-black responsive-image-container">
               <Image
                 src="/logo.jpg"
                 alt="Building Bharat Logo"
@@ -435,30 +435,33 @@ export default function HaveQuestionsLetsTalk() {
       </div>
 
       <style jsx>{`
-        /* Responsive image container */
+        /* Responsive image container - Desktop default */
         .responsive-image-container {
           width: 100% !important;
           min-width: 100% !important;
           max-width: 100% !important;
         }
 
-        /* Reduce width and increase height on mobile devices */
+        /* Mobile devices - reduce width with higher specificity */
         @media (max-width: 639px) {
-          .responsive-image-container {
-            max-width: 240px !important;
-            width: 100% !important;
+          section .responsive-image-container {
+            max-width: 280px !important;
+            width: 280px !important;
+            min-width: 280px !important;
           }
         }
         @media (min-width: 640px) and (max-width: 767px) {
-          .responsive-image-container {
+          section .responsive-image-container {
             max-width: 280px !important;
-            width: 100% !important;
+            width: 280px !important;
+            min-width: 280px !important;
           }
         }
         @media (min-width: 768px) and (max-width: 1023px) {
-          .responsive-image-container {
+          section .responsive-image-container {
             max-width: 320px !important;
-            width: 100% !important;
+            width: 320px !important;
+            min-width: 320px !important;
           }
         }
         .responsive-image-container img {
@@ -471,23 +474,37 @@ export default function HaveQuestionsLetsTalk() {
         /* Device-specific responsive heights - increased height, reduced width */
         @media (max-width: 375px) {
           .responsive-image-container {
-            height: 96px !important;
-            min-height: 96px;
+            height: 160px !important;
+            min-height: 160px;
+          }
+        }
+        /* iPhone SE specific - increase height with higher specificity */
+        @media (max-width: 375px) and (max-height: 667px) {
+          section .responsive-image-container {
+            height: 200px !important;
+            min-height: 200px !important;
+          }
+        }
+        /* Alternative iPhone SE targeting */
+        @media screen and (device-width: 375px) and (device-height: 667px) {
+          section .responsive-image-container {
+            height: 200px !important;
+            min-height: 200px !important;
           }
         }
         @media (min-width: 376px) and (max-width: 475px) {
           .responsive-image-container {
-            height: 128px !important;
+            height: 200px !important;
           }
         }
         @media (min-width: 476px) and (max-width: 639px) {
           .responsive-image-container {
-            height: 160px !important;
+            height: 240px !important;
           }
         }
         @media (min-width: 640px) and (max-width: 767px) {
           .responsive-image-container {
-            height: 192px !important;
+            height: 280px !important;
           }
         }
         @media (min-width: 768px) and (max-width: 1023px) {
