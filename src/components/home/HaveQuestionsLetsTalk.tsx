@@ -492,6 +492,16 @@ export default function HaveQuestionsLetsTalk() {
             min-height: 200px !important;
           }
         }
+        /* Samsung Galaxy S8+ and similar devices - rectangular shape */
+        @media (max-width: 360px) and (min-height: 700px) {
+          section .responsive-image-container {
+            max-width: 200px !important;
+            width: 200px !important;
+            min-width: 200px !important;
+            height: 120px !important;
+            min-height: 120px !important;
+          }
+        }
         @media (min-width: 376px) and (max-width: 475px) {
           .responsive-image-container {
             height: 200px !important;
